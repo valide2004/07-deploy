@@ -314,18 +314,68 @@ font-weight: bold;
         border-bottom: 1px solid rgb(216, 214, 214);
 }
 
-@media (max-width:760px){
-    .burger{
-        display: block;
-    }
-    .nav_list{
-        display: none;
-    }
-    .left{
-        display: grid;
-    }
-    .mehsul{
-        display: block;
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.sosial{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+   padding: 10px;
+  
+}
+.ins{
+}
+@media (max-width:760px)
+{
+ 
+        .nav_list {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background: white;
+            width: 100%;
+            padding: 10px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .nav_list.active {
+            display: flex;
+        }
+    
+        .burger {
+            display: block;
+        }
+    
+            .main {
+                flex-direction: column;
+            }
+        
+            .left, .right {
+                width: 100%;
+            }
+        
+            .right {
+                grid-template-columns: 1fr;
+            }
+        
 
+            .footer {
+                flex-direction: column;
+                text-align: center;
+            }
+    
+    .product {
+        grid-template-columns: 1fr;
+    }
+    .latest{
+        flex-direction: column;
+       align-items: center;
     }
 }
